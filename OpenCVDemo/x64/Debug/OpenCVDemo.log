@@ -1,0 +1,39 @@
+﻿  OpenCVDemo.cpp
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:  “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:             _Tp=float
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         and
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:             _Tp=int
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:  “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:             _Tp=float
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         and
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:             _Tp=int
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:  “参数”: 从“_Tp”转换到“int”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:             _Tp=float
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:  “参数”: 从“float”转换到“_Tp”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:             _Tp=int
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:  “参数”: 从“float”转换到“_Tp”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:             _Tp=int
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(253,10): warning C4477:  “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(253,10): message :  请考虑在格式字符串中使用“%zd”
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(254,75): warning C4267:  “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(293,71): warning C4267:  “参数”: 从“size_t”转换到“int”，可能丢失数据
+  OpenCVDemo.vcxproj -> D:\ljp\OpenCVDemo\x64\Debug\OpenCVDemo.exe

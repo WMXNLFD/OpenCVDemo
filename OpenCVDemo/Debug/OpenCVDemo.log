@@ -1,0 +1,36 @@
+﻿  OpenCVDemo.cpp
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:  “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:             _Tp=float
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         and
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:             _Tp=int
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,32): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:  “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:             _Tp=float
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         and
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:             _Tp=int
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,25): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:  “参数”: 从“_Tp”转换到“int”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:             _Tp=float
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(88,42): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(188,20): warning C4018:  “<”: 有符号/无符号不匹配
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:  “参数”: 从“float”转换到“_Tp”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:             _Tp=int
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,132): warning C4244:         ]
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:  “参数”: 从“float”转换到“_Tp”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:         with
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:         [
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:             _Tp=int
+D:\ljp\OpenCVDemo\OpenCVDemo\OpenCVDemo.cpp(242,61): warning C4244:         ]
+opencv_world341d.lib(opencv_world341d.dll) : fatal error LNK1112: 模块计算机类型“x64”与目标计算机类型“x86”冲突
