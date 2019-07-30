@@ -167,8 +167,8 @@ int main()
 	//Canny_Demo(0, 0);
 
 	//凸包
-	//convexHull(8, dst1);
-	//imshow("凸包", dst1);
+	//convexHull(8, gray_src);
+	//imshow("凸包", gray_src);
 
 
 	Canny_Demo(0, 0);
