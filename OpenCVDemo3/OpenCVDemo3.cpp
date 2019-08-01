@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
 	imshow("MORPH_OPEN", morhpImage);
 
 	// dilate image 膨胀操作
-	kernel = getStructuringElement(MORPH_ELLIPSE, Size(10,10), Point(-1, -1));
+	kernel = getStructuringElement(MORPH_ELLIPSE, Size(3,3), Point(-1, -1));
 	dilate(morhpImage, morhpImage, kernel,Point(-1,-1),1);
 	imshow("dilate image", morhpImage);
 
