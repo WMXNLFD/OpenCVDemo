@@ -64,16 +64,21 @@ int main(int argc, char** argv) {
 			Rect rect = boundingRect(contours[t]);
 			float ratio = float(rect.width) / float(rect.height);  //宽高之比
 
-			if (ratio < 1.5 && ratio > 0.9) {
+			if (ratio < 1.5 && ratio > 0.86 && rect.height < 490) { 
+				//cout << t << endl;
+				//cout << "rect.width = " << rect.width << endl;
+				//cout << "rect.height = " << rect.height << endl;
+				//cout << "ratio=" << ratio << endl;
 				drawContours(printImage, contours, t, Scalar(0, 0, 255), 2, 8, hireachy, 0, Point());
 			}
 		}
 
 		//保存处理后的图片
-		savedfilename = dest + to_string(i + 1) + ".bmp";//int 转为string  format("%d", i + 1)	
-		//cout << filenames[i].substr(12) << endl;  //取路径后面的名字
-		//cout << savedfilename << endl;
-		//imwrite(savedfilename, printImage);
+		//savedfilename = dest + to_string(i + 1) + ".bmp";//int 转为string  format("%d", i + 1)	
+		//cout << dest + filenames[i].substr(12) << endl;  //取路径后面的名字
+		savedfilename = dest + filenames[i].substr(12);
+		cout << savedfilename << endl;
+		imwrite(savedfilename, printImage);
 	}
 		
 	return 0;

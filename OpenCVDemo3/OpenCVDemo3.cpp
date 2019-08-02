@@ -7,13 +7,16 @@ using namespace std;
 
 Mat src, gray_src, dst;
 int main(int argc, char** argv) {
-	src = imread("D:/ljp/p1/1.bmp");
+	src = imread("D:/ljp/p1/PP20180411-S20180411-1321-04_0071.bmp");
 	if (src.empty()) {
 		printf("could not load image...\n");
 		return -1;
 	}
-	namedWindow("input image", CV_WINDOW_AUTOSIZE);
-	imshow("input image", src);	
+	//namedWindow("input image", CV_WINDOW_AUTOSIZE);
+	//imshow("input image", src);	
+
+	//计算测试时间
+	//double time = cvGetTickCount();
 	
 	Mat src_fill = src.clone();
 	Point PointArray[4];
@@ -22,7 +25,7 @@ int main(int argc, char** argv) {
 	PointArray[2] = Point(350, 670);
 	PointArray[3] = Point(310, 666);
 	fillConvexPoly(src_fill, PointArray, 4, Scalar(0, 0, 255));
-	imshow("填充后", src_fill);
+	//imshow("填充后", src_fill);
 	
 	//高斯模糊
 	Mat blurImage;
@@ -63,10 +66,12 @@ int main(int argc, char** argv) {
 		Rect rect = boundingRect(contours[t]);
 		float ratio = float(rect.width) / float(rect.height);  //宽高之比
 
-		if (ratio < 1.5 && ratio > 0.9) {
+		if (ratio < 1.5 && ratio > 0.8) {
 			drawContours(printImage, contours, t, Scalar(0, 0, 255), 2, 8, hireachy, 0, Point());
 		}
 	}
+
+	//printf("execution time(ms):%.2f\n", (getTickCount() - time) / getTickFrequency() * 1000);
 	imshow("contours", printImage);
 
 
