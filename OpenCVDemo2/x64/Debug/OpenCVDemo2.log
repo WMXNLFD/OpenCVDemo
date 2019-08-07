@@ -1,3 +1,3 @@
 ﻿  OpenCVDemo2.cpp
-D:\ljp\OpenCVDemo\OpenCVDemo2\OpenCVDemo2.cpp(72,88): warning C4267:  “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\ljp\OpenCVDemo\OpenCVDemo2\OpenCVDemo2.cpp(88,88): warning C4267:  “参数”: 从“size_t”转换到“int”，可能丢失数据
   OpenCVDemo2.vcxproj -> D:\ljp\OpenCVDemo\x64\Debug\OpenCVDemo2.exe

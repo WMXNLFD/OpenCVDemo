@@ -7,7 +7,7 @@ using namespace std;
 
 Mat src, gray_src, dst;
 int main(int argc, char** argv) {
-	src = imread("D:/ljp/p1/PP20180411-S20180411-1321-04_0071.bmp");
+	src = imread("D:/ljp/p1/1.bmp");
 	if (src.empty()) {
 		printf("could not load image...\n");
 		return -1;
@@ -20,12 +20,28 @@ int main(int argc, char** argv) {
 	
 	Mat src_fill = src.clone();
 	Point PointArray[4];
-	PointArray[0] = Point(333, 480);
-	PointArray[1] = Point(350, 480);
-	PointArray[2] = Point(350, 670);
-	PointArray[3] = Point(310, 666);
-	fillConvexPoly(src_fill, PointArray, 4, Scalar(0, 0, 255));
+	PointArray[0] = Point(343, 397);
+	PointArray[1] = Point(350, 397);
+	PointArray[2] = Point(350, 700);
+	PointArray[3] = Point(307, 700);
+	fillConvexPoly(src_fill, PointArray, 4, Scalar(255, 255, 255));
 	//imshow("填充后", src_fill);
+
+	Mat imageGray;	
+	cvtColor(src_fill, imageGray, CV_RGB2GRAY, 0);
+	Mat imageMask = Mat(src.size(), CV_8UC1, Scalar::all(0));
+
+	//通过阈值处理生成Mask
+	threshold(imageGray, imageMask, 240, 255, CV_THRESH_BINARY);
+	Mat Kernel = getStructuringElement(MORPH_RECT, Size(3, 3));
+	//对Mask膨胀处理，增加Mask面积
+	dilate(imageMask, imageMask, Kernel);
+
+	//图像修复
+	inpaint(src_fill, imageMask, src_fill, 1, INPAINT_NS); //INPAINT_TELEA
+	//imshow("Mask", imageMask);
+	imshow("修复后", src_fill);
+
 	
 	//高斯模糊
 	Mat blurImage;
@@ -48,7 +64,7 @@ int main(int argc, char** argv) {
 	imshow("MORPH_OPEN", morhpImage);
 
 	// dilate image 膨胀操作
-	kernel = getStructuringElement(MORPH_ELLIPSE, Size(3,3), Point(-1, -1));
+	kernel = getStructuringElement(MORPH_ELLIPSE, Size(7,7), Point(-1, -1));
 	dilate(morhpImage, morhpImage, kernel,Point(-1,-1),1);
 	imshow("dilate image", morhpImage);
 
@@ -66,7 +82,11 @@ int main(int argc, char** argv) {
 		Rect rect = boundingRect(contours[t]);
 		float ratio = float(rect.width) / float(rect.height);  //宽高之比
 
-		if (ratio < 1.5 && ratio > 0.8) {
+		if (rect.width < 372) {  //ratio < 1.5 && ratio > 0.8
+			cout << t << endl;
+			cout << "rect.width = " << rect.width << endl;
+			cout << "rect.height = " << rect.height << endl;
+			cout << "ratio=" << ratio << endl;
 			drawContours(printImage, contours, t, Scalar(0, 0, 255), 2, 8, hireachy, 0, Point());
 		}
 	}
