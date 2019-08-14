@@ -9,7 +9,7 @@ Mat src, gray_src, dst;
 int main(int argc, char** argv) {
 
 	String path = "D:/ljp/p1/1/"; //待处理图片文件夹地址
-	String dest = "D:/ljp/p1/3/"; //处理后图片保存地址
+	String dest = "D:/ljp/p1/4/"; //处理后图片保存地址
 	String savedfilename;
 	vector<String> filenames;
 
@@ -85,7 +85,7 @@ int main(int argc, char** argv) {
 				cout << "rect.width = " << rect.width << endl;
 				cout << "rect.height = " << rect.height << endl;
 				cout << "ratio=" << ratio << endl;
-				drawContours(printImage, contours, t, Scalar(0, 0, 255), 2, 8, hireachy, 0, Point());
+				drawContours(printImage, contours, t, Scalar(0, 0, 255), 1, 8, hireachy, 0, Point());
 			}
 		}
 
