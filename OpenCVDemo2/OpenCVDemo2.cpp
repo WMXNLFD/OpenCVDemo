@@ -72,6 +72,7 @@ int main(int argc, char** argv) {
 		findContours(morhpImage, contours, hireachy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0));
 		//Mat resultImage = Mat::zeros(src.size(), CV_8UC3); //把轮廓点画在上面
 		Mat printImage = src.clone(); //把轮廓点画在图上
+		//if (contours.size() == 0) cout << "识别失败" << endl;
 		for (size_t t = 0; t < contours.size(); t++) {
 			// 面积过滤
 			double area = contourArea(contours[t]);  //计算轮廓面积
@@ -79,7 +80,7 @@ int main(int argc, char** argv) {
 			// 横纵比过滤
 			Rect rect = boundingRect(contours[t]);
 			float ratio = float(rect.width) / float(rect.height);  //宽高之比
-
+			
 			if (rect.width < 372) { 
 				cout << t << endl;
 				cout << "rect.width = " << rect.width << endl;
